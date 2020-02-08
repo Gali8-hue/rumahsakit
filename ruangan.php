@@ -23,7 +23,7 @@
         
         ?>
         <tr>
-            <td>1</td>
+            
             <td><?= $value ['kode_ruang']?></td>
             <td><?= $value ['nama_ruangan']?></td>
             <td><?= $value ['harga']?></td>
