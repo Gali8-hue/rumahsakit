@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    color: #333;
+    background: #ECF0F5;
+}
+
+body:after {
+    content: "";
+    width: 100%;
+    height: 200px;
+    background: #0769D8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+img {
+    width: 100%;
+}
+
+a,
+a:link,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+/* NAV HEADER */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+nav ul,
+nav ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    font-size: 20px;
+    padding: 4px;
+    margin: 0 2px;
+    color: #FFF;
+}
+
+nav input {
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    width: 350px;
+    outline: 0;
+    color: #FFF;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+nav input::placeholder {
+    color: #DDD;
+}
+
+nav form .icon {
+    color: #FFF;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.wrap {
+    padding: 0;
+    height: auto;
+    display: flex;
+}
+
+.wrap-left {
+    width: 20vw;
+    height: 100vh;
+    background: #FFF;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.wrap-right {
+    position: relative;
+    width: 80vw;
+    height: auto;
+    min-height: 400px;
+    margin-top: 70px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.menu-top {
+    padding: 30px 0;
+    border-bottom: solid 1px #eee;
+}
+
+.menu-top img {
+    background: #61a4f0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover
+}
+
+.menu-top h4 {
+    margin: 20px 0 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.menu-top p {
+    margin: 0;
+    color: #666;
+}
+
+/* Main Menu*/
+.menu-bottom {
+    padding-top: 20px;
+}
+
+.menu-bottom a {
+    display: block;
+    margin-bottom: 3px;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    padding: 0 20px;
+    position: relative;
+    transition: all .2s linear;
+}
+
+.menu-bottom a:hover {
+    color: #FFF;
+    background: #0769D8;
+}
+
+.menu-bottom .divider {
+    height: .5px;
+    background: #EEE;
+    margin: 5px 20px;
+}
+
+.menu-bottom .icon {
+    width: 25px;
+    display: inline-block;
+}
+
+
+/* Content */
+h1.title {
+    text-align: center;
+    color: #FFF;
+    margin: 0 0 20px;
+    font-weight: 500;
+    font-size: 1.7em;
+}
+
+.button-top,
+.button-top:link,
+.button-top:visited {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 2.3em;
+    border-radius: 50px;
+    background: #FFF;
+    transition: all .3s ease-in-out;
+}
+
+.button-top:hover {
+    background: #054D9A;
+    color: #FFF;
+}
+
+/* Gallery Page */
+.gallery {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media {
+    flex: 1 0 21%;
+    margin: 0 10px 20px;
+    height: auto;
+    background: #FFF;
+    border-radius: 6px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: 0 1px 5px #CCC;
+    transition: all .3s ease-in-out;
+}
+
+.media:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px #CCC;
+}
+
+.media .wrap-img {
+    position: relative;
+    height: 200px;
+}
+
+.wrap-img img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.wrap-img span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: .9em;
+}
+
+.wrap-img .rating {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: #FFFFFFCC;
+    border-radius: 20px;
+    padding: 0 5px;
+}
+
+.rating > .icon {
+    color: orange;
+    font-size: 16px;
+}
+
+.media h3 {
+    margin: 10px 0 5px;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.media h4 {
+    margin: 0 0 15px;
+    padding: 0 10px;
+    font-weight: normal;
+}
