@@ -1,3 +1,5 @@
+<?php include'inc/koneksi.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,10 +12,11 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue|Rubik:400,500,700&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
-
+    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    
 
-    <title>Administrator | App Rumah Sakit</title>
+    <title><?= isset($halaman) ? $halaman : 'Administrator' ?> | App Rumah Sakit</title>
 </head>
 
 <body>
@@ -29,17 +32,20 @@
 
                 <div class="divider"></div>
 
-                <a href="gallery.php"> <i class="icon ion-md-images"></i> Gallery</a>
-                <a href="blog.php"> <i class="icon ion-md-paper"></i> Blog</a>
+                <a <?= (isset($halaman) && $halaman == 'Pasien') ? 'class="active"' : '' ?> href="pasien.php"> <i class="icon ion-md-people"></i> Pasien</a>
+                <a <?= (isset($halaman) && $halaman == 'Dokter') ? 'class="active"' : '' ?> href="dokter.php"> <i class="icon ion-md-people"></i> Dokter</a>
+                <a <?= (isset($halaman) && $halaman == 'Ruangan') ? 'class="active"' : '' ?> href="ruangan.php"> <i class="icon ion-ios-bed"></i> Ruangan</a>
 
                 <div class="divider"></div>
 
-                <a href="about.php"> <i class="icon ion-md-information-circle-outline"></i> About</a>
-                <a href="user.php"> <i class="icon ion-md-people"></i> User</a>
-
+                <a href="rawatinap.php"> <i class="icon ion-md-medkit"></i> Rawat inap</a>
                 <div class="divider"></div>
 
-                <a href="logout.php"> <i class="icon ion-md-log-out"></i> Logout</a>
+                <a href="pengguna.php"> <i class="icon ion-md-person"></i> Pengguna</a>
+
+                
+
+                <a href="logout.php"> <i class="icon ion-md-log-out"></i> keluar</a>
             </div>
         </div>
 

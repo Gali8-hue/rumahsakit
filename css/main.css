@@ -150,13 +150,14 @@ nav form .icon {
     transition: all .2s linear;
 }
 
-.menu-bottom a:hover {
+.menu-bottom a:hover,
+.menu-bottom a.active {
     color: #FFF;
     background: #0769D8;
 }
 
 .menu-bottom .divider {
-    height: .5px;
+    height: 1px;
     background: #EEE;
     margin: 5px 20px;
 }
@@ -168,6 +169,15 @@ nav form .icon {
 
 
 /* Content */
+.wrap-content {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    background: #EEE;
+    border-radius: 6px;
+    box-shadow: 0 0 15px #77777720;
+
+}
 h1.title {
     text-align: center;
     color: #FFF;
