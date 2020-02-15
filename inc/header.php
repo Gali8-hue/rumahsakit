@@ -35,10 +35,10 @@
                 <a <?= (isset($halaman) && $halaman == 'Pasien') ? 'class="active"' : '' ?> href="pasien.php"> <i class="icon ion-md-people"></i> Pasien</a>
                 <a <?= (isset($halaman) && $halaman == 'Dokter') ? 'class="active"' : '' ?> href="dokter.php"> <i class="icon ion-md-people"></i> Dokter</a>
                 <a <?= (isset($halaman) && $halaman == 'Ruangan') ? 'class="active"' : '' ?> href="ruangan.php"> <i class="icon ion-ios-bed"></i> Ruangan</a>
-
+                <a <?= (isset($halaman) && $halaman == 'paramedis') ? 'class="active"' : ''?> href="paramedis.php"> <i class="icon ion-md-people"></i> Paramedis</a>
                 <div class="divider"></div>
 
-                <a href="rawatinap.php"> <i class="icon ion-md-medkit"></i> Rawat inap</a>
+                <a  <?=(isset ($halaman) && $halaman == 'rawatinap') ? 'clas="active"' : '' ?> href="rawatinap.php"> <i class="icon ion-md-medkit"></i> Rawat inap</a>
                 <div class="divider"></div>
 
                 <a href="pengguna.php"> <i class="icon ion-md-person"></i> Pengguna</a>
